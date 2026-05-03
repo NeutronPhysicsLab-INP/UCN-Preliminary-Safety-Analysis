@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name        = "alsun_safety"
+version     = "1.0.0"
+description = "Preliminary safety solver for the AlSUN ultra-cold neutron source liquid deuterium premoderator container."
+readme      = "README.md"
+license     = { file = "LICENSE" }
+requires-python = ">=3.9"
+keywords = [
+    "ultra-cold neutrons", "liquid deuterium", "cryogenic safety",
+    "loss of vacuum accident", "rupture disk", "monte carlo uncertainty",
+    "WWR-K", "AlSUN",
+]
+authors = [
+    { name = "Akzhol Almukhametov" },
+    { name = "Kylyshbek Turlybekuly", email = "k.turlybekuly@inp.kz" },
+    { name = "Asset Shaimerdenov" },
+    { name = "Avganbek Sabidolda" },
+    { name = "Darkhan Sairanbayev" },
+    { name = "Zhanibek Kurmanaliyev" },
+    { name = "Valery Nesvizhevsky" },
+    { name = "Alexey Muzychka" },
+    { name = "Ekaterina Korobkina" },
+    { name = "Egor Lychagin" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/NeutronPhysicsLab-INP/UCN-Preliminary-Safety-Analysis"
+Issues   = "https://github.com/NeutronPhysicsLab-INP/UCN-Preliminary-Safety-Analysis/issues"
+
+[tool.setuptools.packages.find]
+include = ["alsun_safety*"]
+exclude = ["data*", "scripts*", "tests*"]

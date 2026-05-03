@@ -1,0 +1,73 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript and this repository."
+type: software
+title: "AlSUN Safety Solver"
+abstract: >-
+  Python solver for the analytical safety assessment of the liquid deuterium
+  premoderator container at the AlSUN ultra-cold neutron source (WWR-K reactor).
+  Implements the cooling-failure, loss-of-vacuum-accident, and detonation
+  scenarios with rupture-disk relief dynamics, NIST-tabulated equation-of-state
+  handling, and a Monte Carlo uncertainty quantification driver.
+version: "1.0.0"
+date-released: "2026-04-30"
+license: MIT
+repository-code: "https://github.com/NeutronPhysicsLab-INP/UCN-Preliminary-Safety-Analysis"
+keywords:
+  - "ultra-cold neutrons"
+  - "liquid deuterium"
+  - "cryogenic safety"
+  - "loss of vacuum accident"
+  - "rupture disk"
+  - "Monte Carlo uncertainty"
+  - "WWR-K"
+  - "AlSUN"
+authors:
+  - family-names: Almukhametov
+    given-names: Akzhol
+    orcid: "https://orcid.org/0009-0004-3542-3836"
+  - family-names: Turlybekuly
+    given-names: Kylyshbek
+    email: "k.turlybekuly@inp.kz"
+  - family-names: Shaimerdenov
+    given-names: Asset
+  - family-names: Sabidolda
+    given-names: Avganbek
+  - family-names: Sairanbayev
+    given-names: Darkhan
+  - family-names: Kurmanaliyev
+    given-names: Zhanibek
+  - family-names: Nesvizhevsky
+    given-names: Valery
+  - family-names: Muzychka
+    given-names: Alexey
+  - family-names: Korobkina
+    given-names: Ekaterina
+  - family-names: Lychagin
+    given-names: Egor
+preferred-citation:
+  type: article
+  title: "Preliminary Safety Assessment of Liquid Deuterium Premoderator Container for Ultra-Cold Neutron Source at WWR-K Reactor (AlSUN)"
+  authors:
+    - family-names: Almukhametov
+      given-names: Akzhol
+    - family-names: Turlybekuly
+      given-names: Kylyshbek
+    - family-names: Shaimerdenov
+      given-names: Asset
+    - family-names: Sabidolda
+      given-names: Avganbek
+    - family-names: Sairanbayev
+      given-names: Darkhan
+    - family-names: Kurmanaliyev
+      given-names: Zhanibek
+    - family-names: Nesvizhevsky
+      given-names: Valery
+    - family-names: Muzychka
+      given-names: Alexey
+    - family-names: Korobkina
+      given-names: Ekaterina
+    - family-names: Lychagin
+      given-names: Egor
+  year: 2026
+  # journal: "<journal name once accepted>"
+  # doi:     "<DOI once available>"
