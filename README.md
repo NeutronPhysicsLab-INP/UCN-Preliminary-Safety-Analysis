@@ -12,9 +12,9 @@ This repository contains the analytical / numerical solver used in the manuscrip
 
 A Monte Carlo uncertainty quantification (UQ) driver wraps each scenario.
 
-## Redacted release
+## Public release
 
-A small set of input parameters derived from the WWR-K reactor's classified neutronic and structural data have been replaced by non-sensitive placeholder values in `alsun_safety/config.py`. These are flagged `# REDACTED` in the source. The full physics framework — equation-of-state handler, lumped-parameter transient solver, rupture-disk and ballast-tank dynamics, LOVA cryopumping model, structural stress chain, and Monte Carlo driver — is provided in source.
+The full physics framework — equation-of-state handler, lumped-parameter transient solver, rupture-disk and ballast-tank dynamics, LOVA cryopumping model, structural stress chain, and Monte Carlo driver — is provided in source. The default parameter values in `alsun_safety/config.py` reproduce the manuscript-baseline configuration (Table 1 and Sections 3.5–3.7 of the paper); override individual fields when scanning parameter space.
 
 ## Repository layout
 
@@ -89,7 +89,7 @@ python scripts/air_ingress.py
 
 ## License
 
-Add your preferred license. (MIT recommended for code; CC-BY for data/figures.)
+Released under the MIT License — see [`LICENSE`](LICENSE) for the full text.
 
 ## Citation
 
